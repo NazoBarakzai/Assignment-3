@@ -1,0 +1,394 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "f692c087",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Twinkle, twinkle, little star\n",
+      "        How I wonder what you are\n",
+      "            Up above the world so high\n",
+      "            Like a diamond in the sky\n",
+      "Twinkle, twinkle little star\n",
+      "        How I wonder what you are\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "1. Write a python program to print the following string in a specific format (see the outpt)\n",
+    "Twinkle, twinkle, little star\n",
+    "        How I wonder what you are\n",
+    "            Up above the world so high\n",
+    "            Like a diamond in the sky\n",
+    "Twinkle, twinkle little star\n",
+    "        How I wonder what you are\n",
+    "\"\"\"\n",
+    "print(\"\"\"Twinkle, twinkle, little star\n",
+    "        How I wonder what you are\n",
+    "            Up above the world so high\n",
+    "            Like a diamond in the sky\n",
+    "Twinkle, twinkle little star\n",
+    "        How I wonder what you are\"\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "ff183563",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)]\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "2. Write a python program to get the python version your using.\n",
+    "\"\"\"\n",
+    "import sys\n",
+    "\n",
+    "print(sys.version)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "4ed257e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "date and time = 30/10/2021 21:32:22\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "3. Write a pythin program to dispay the current date and time.\n",
+    "\"\"\"\n",
+    "from datetime import datetime\n",
+    "\n",
+    "now = datetime.now()\n",
+    "dt_string = now.strftime(\"%d/%m/%Y %H:%M:%S\")\n",
+    "\n",
+    "print(\"date and time =\", dt_string)\t"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "5d27f548",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter radius: 5\n",
+      "Area is  78.525\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "4. Write a Python program which accepts the radius of a circle from the user and compute the area.\n",
+    "\"\"\"\n",
+    "radius = int(input(\"enter radius: \"))\n",
+    "PI = 3.141\n",
+    "area = PI*(radius*radius)\n",
+    "print(\"Area is \", area)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "88628829",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter your first name: Naz\n",
+      "Enter your last nameBibi\n",
+      "ibiB zaN\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "5. Write a Python program which accepts the user's first and last name and print them in reverse order witha space between them.\n",
+    "\"\"\"\n",
+    "fname = str(input(\"Enter your first name: \"))\n",
+    "lname = str(input(\"Enter your last name\"))\n",
+    "\n",
+    "reverse = lname[::-1] +\" \"+ fname[::-1]\n",
+    "\n",
+    "print(reverse)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "22dfed3d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a number: 10\n",
+      "enter another number: 20\n",
+      "30\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "6. Write a python program which takes two inputs from the user and print them addition\n",
+    "\"\"\"\n",
+    "num1 = int(input(\"enter a number: \"))\n",
+    "num2 = int(input(\"enter another number: \"))\n",
+    "\n",
+    "print(num1+num2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "b4a7d388",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter maths obtain marks: 50\n",
+      "enter science obtain marks: 70\n",
+      "enter islamic study obtain marks: 90\n",
+      "enter pak study obtain marks: 90\n",
+      "enter english obtain marks: 80\n",
+      "maths \t\t\t50\n",
+      "science \t\t70\n",
+      "islamic std \t\t90\n",
+      "Pak std \t\t90\n",
+      "English \t\t80\n",
+      "\t\t Total \t380\n",
+      "\t\t Grad \tC\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "7. Write a program which takes 5 inputs from user for different subject's marks, total it and generate mark sheet using grades?\n",
+    "\"\"\"\n",
+    "math = int(input(\"enter maths obtain marks: \"))\n",
+    "sci = int(input(\"enter science obtain marks: \"))\n",
+    "istd = int(input(\"enter islamic study obtain marks: \"))\n",
+    "pstd = int(input(\"enter pak study obtain marks: \"))\n",
+    "eng = int(input(\"enter english obtain marks: \"))\n",
+    "\n",
+    "total = math + sci + istd + pstd + eng\n",
+    "avg = (total /500) * 100\n",
+    "\n",
+    "if avg <= 100 and avg >= 90:\n",
+    "    grad = 'A'\n",
+    "elif avg < 90 and avg >= 80:\n",
+    "    grad = 'B'\n",
+    "elif avg < 80 and avg >= 70:\n",
+    "    grad = 'C'\n",
+    "elif avg < 70 and avg >= 60:\n",
+    "    grad = 'D'\n",
+    "elif avg < 60 and avg >= 50:\n",
+    "    grad = 'E'\n",
+    "else:\n",
+    "    grad = \"fail\"\n",
+    "\n",
+    "print(\"\"\"maths \\t\\t\\t{}\n",
+    "science \\t\\t{}\n",
+    "islamic std \\t\\t{}\n",
+    "Pak std \\t\\t{}\n",
+    "English \\t\\t{}\n",
+    "\\t\\t Total \\t{}\n",
+    "\\t\\t Grad \\t{}\"\"\".format(math, sci, istd, pstd, eng,total,grad))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "fda878be",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a number: 5\n",
+      "5  is an odd number\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "8. Write a program which take input from user and identify that the given number is even or odd.\n",
+    "\n",
+    "\"\"\"\n",
+    "num = int(input(\"enter a number: \"))\n",
+    "\n",
+    "if num%2 == 0:\n",
+    "    print(num, \" is an even number\")\n",
+    "else:\n",
+    "    print(num, \" is an odd number\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "872dae58",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "lenght of the list is  5\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "9. Write a program which print the length of the list?\n",
+    "\"\"\"\n",
+    "lst = [10, 20, 30, 40, 50]\n",
+    "\n",
+    "print(\"lenght of the list is \",len(lst))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "09d19944",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "150.3\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "10. Write a program to sum all numeric items in a list?\n",
+    "\n",
+    "\"\"\"\n",
+    "lst = [10, \"cat\", 20, \"dog\", 30, \"ant\", 40, 50.30]\n",
+    "num = 0\n",
+    "for i in lst:\n",
+    "    if type(i) == type(int()) or type(i) == type(float()):\n",
+    "        num = num + i\n",
+    "print(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "075eb115",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "60\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "11. Write a program to get the largest number from a numeric list.\n",
+    "\n",
+    "\"\"\"\n",
+    "lst= [10, 20, 30, 60, 40, 50]\n",
+    "num = 0\n",
+    "\n",
+    "for i in lst:\n",
+    "    if num < i:\n",
+    "        num = i\n",
+    "print(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "c223a3b3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "12. take a list, say from example this one:\n",
+    "      a = [1,1,2,3,5,8,13,21,34,55,89]\n",
+    "      Write a program that prints out all the elements of the list that are less than 5.\n",
+    "\"\"\"\n",
+    "a = [1,1,2,3,5,8,13,21,34,55,89]\n",
+    "\n",
+    "for i in a:\n",
+    "    if i < 5:\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "20ea4fd1",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
